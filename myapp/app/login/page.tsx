@@ -42,10 +42,10 @@ export default function LoginPage() {
 
       if (user.length > 0) {
         // Save logged-in user
-        localStorage.setItem("currentUser", JSON.stringify(user[0]));
+        localStorage.setItem("user", JSON.stringify(user[0]));
 
         alert("Login Successful!");
-        router.push("/dashboard");
+        router.push("/home");
       } else {
         alert("Invalid credentials");
       }

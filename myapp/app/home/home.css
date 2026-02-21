@@ -1,0 +1,234 @@
+/* .home-container {
+  background-color: #f4f6fb;
+  min-height: 100vh;
+  padding: 15px;
+  padding-bottom: 70px;
+  font-family: Arial, sans-serif;
+} */
+.home-container {
+  padding: 16px;
+  background-color: #f3f6fb;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.location {
+  font-size: 13px;
+  color: gray;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #4a90e2;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+
+}
+
+/* Search */
+.search-box {
+  margin: 15px 0;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e9edf5;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Doctor Cards */
+.doctor-list {
+  display: flex;
+  /* flex-direction: column; */
+    flex-wrap: wrap; 
+  gap: 15px;
+}
+
+/* .doctor-card {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  align-items: center;
+} */
+.doctor-card {
+  flex: 1 1 calc(50% - 20px); /* 2 per row, accounting for gap */
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.doctor-img {
+  width: 80px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.doctor-info {
+  margin-left: 15px;
+}
+
+.doctor-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.specialization {
+  color: #1a73e8;
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.experience {
+  font-size: 12px;
+  color: gray;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.rating {
+  font-size: 12px;
+  margin-top: 3px;
+}
+/* .appointment-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.appointment-btn:hover {
+  background-color: #3e8e41;
+} */
+.appointment-btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+/* Hover Effect */
+.appointment-btn:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+}
+
+/* Click Effect */
+.appointment-btn:active {
+  transform: scale(0.96);
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+}
+
+.bottom-nav span {
+  cursor: pointer;
+}
+
+.bottom-nav .active {
+  color: #1a73e8;
+  font-weight: bold;
+}
+/* Header right section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logout button */
+.logout-btn {
+  padding: 6px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+}
+
+/* Heart icon */
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.liked {
+  color: red;
+}
+
+/* Make doctor card relative */
+.doctor-card {
+  position: relative;
+}
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .doctor-card {
+    flex: 1 1 100%; /* 1 per row */
+  }
+}

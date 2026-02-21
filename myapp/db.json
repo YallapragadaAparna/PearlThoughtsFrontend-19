@@ -3,17 +3,79 @@
     {
       "id": 1,
       "name": "Aparna",
-      "email": "apar@gmail.com",
+      "email": "yaparna2005@gmail.com",
       "password": "1234"
     },
   
    {
 
       "id": 2,
-      "name": "Aparna",
+      "name": "triv",
       "email": "yapar@gmail.com",
       "password": "1234"
     }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Prakash Das",
+      "specialization": "Psychologist",
+      "experience": "8 Years Experience",
+      "availableTime": "09:00 AM - 07:00 PM",
+      "location": "Connolly Avenue",
+      "rating": 4.8,
+      "image": "https://randomuser.me/api/portraits/men/72.jpg"
+    
+    },
+     {
+      "id": 2,
+      "name": "Dr. Priya Sharma",
+      "specialization": "Cardiologist",
+      "experience": "12 Years Experience",
+      "availableTime": "10:00 AM - 2:00 PM",
+      "location": "Apollo Clinic, Chennai",
+      "rating": 4.8,
+      "image": "https://randomuser.me/api/portraits/women/45.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Arjun Mehta",
+      "specialization": "Dermatologist",
+      "experience": "8 Years Experience",
+      "availableTime": "9:00 AM - 1:00 PM",
+      "location": "City Care Hospital, Bangalore",
+      "rating": 4.6,
+      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Kavya Reddy",
+      "specialization": "Pediatrician",
+      "experience": "10 Years Experience",
+      "availableTime": "11:00 AM - 4:00 PM",
+      "location": "Rainbow Hospital, Hyderabad",
+      "rating": 4.9,
+      "image": "https://randomuser.me/api/portraits/women/68.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Rahul Verma",
+      "specialization": "Orthopedic Surgeon",
+      "experience": "15 Years Experience",
+      "availableTime": "3:00 PM - 7:00 PM",
+      "location": "Fortis Hospital, Delhi",
+      "rating": 4.7,
+      "image": "https://randomuser.me/api/portraits/men/75.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Sneha Iyer",
+      "specialization": "Gynecologist",
+      "experience": "9 Years Experience",
+      "availableTime": "10:30 AM - 3:30 PM",
+      "location": "Mother Care Clinic, Mumbai",
+      "rating": 4.5,
+      "image": "https://randomuser.me/api/portraits/women/52.jpg"
+    }
   ]
-  
 }
