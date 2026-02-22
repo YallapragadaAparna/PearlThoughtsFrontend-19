@@ -35,7 +35,7 @@ export default function LoginPage() {
 
       // 🔹 Check user with email & password
       const response = await fetch(
-        `http://localhost:5000/users?email=${formData.email}&password=${formData.password}`
+        `https://pearlthoughtsfrontend-19-6.onrender.com/users?email=${formData.email}&password=${formData.password}`
       );
 
       const user = await response.json();

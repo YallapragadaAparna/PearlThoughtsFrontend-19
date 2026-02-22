@@ -33,7 +33,7 @@ export default function HomePage() {
     const parsedUser = JSON.parse(storedUser);
     setUser(parsedUser);
 
-    fetch("http://localhost:5000/doctors")
+    fetch("https://pearlthoughtsfrontend-19-6.onrender.com/doctors")
       .then((res) => res.json())
       .then((data) => setDoctors(data));
   }, [router]);

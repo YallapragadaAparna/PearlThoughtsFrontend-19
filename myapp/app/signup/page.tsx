@@ -35,7 +35,7 @@ export default function SignupPage() {
 
       // 🔹 Step 1: Check if email already exists
       const checkUser = await fetch(
-        `http://localhost:5000/users?email=${formData.email}`
+        `https://pearlthoughtsfrontend-19-6.onrender.com/users?email=${formData.email}`
       );
 
       const existingUser = await checkUser.json();
@@ -46,7 +46,7 @@ export default function SignupPage() {
       }
 
       // 🔹 Step 2: Create new user
-      const response = await fetch("http://localhost:5000/users", {
+      const response = await fetch("https://pearlthoughtsfrontend-19-6.onrender.com/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
