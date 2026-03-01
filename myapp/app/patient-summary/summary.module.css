@@ -1,0 +1,146 @@
+.container {
+  min-height: 100vh;
+  background: #d8ecf0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Doctor Card */
+.doctorCard {
+  width: 800px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.doctorImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.doctorInfo h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.specialization {
+  color: #555;
+  margin: 4px 0;
+}
+
+.experience {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Patient Card */
+.card {
+  width: 800px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+/* Buttons */
+.payBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.payBtn:hover {
+  background-color: #43a047;
+}
+
+.queryBtn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.queryBtn:hover {
+  background-color: #1e88e5;
+}
+/* Button Wrapper */
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Pay Button */
+.payBtn {
+  width: 250px;
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.payBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Quick Query Button */
+.queryBtn {
+  width: 250px;
+  background: linear-gradient(135deg, #2196f3, #1976d2);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.queryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}

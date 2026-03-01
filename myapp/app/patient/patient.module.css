@@ -1,0 +1,71 @@
+/* Container */
+.container {
+  min-height: 100vh;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.card input,
+.card textarea,
+.card select {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.card input:focus,
+.card textarea:focus,
+.card select:focus {
+  border-color: #2bb6c4;
+}
+
+/* Textarea */
+.card textarea {
+  resize: none;
+  height: 70px;
+}
+
+/* Save Button */
+.card button {
+  width: 100%;
+  padding: 12px;
+  background: #2bb6c4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.card button:hover {
+  background: #2199a6;
+}

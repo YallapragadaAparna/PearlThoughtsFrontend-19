@@ -1,7 +1,7 @@
 
 .home-container {
   padding: 16px;
-  background-color: #f3f6fb;
+  background-color:#e6f2f8;
   min-height: 100vh;
   font-family: "Segoe UI", sans-serif;
 }
@@ -17,6 +17,7 @@
   margin: 0;
   font-size: 20px;
   font-weight: 600;
+  color:black;
 }
 
 .location {
@@ -27,7 +28,7 @@
 .profile-circle {
   width: 40px;
   height: 40px;
-  background-color: #4a90e2;
+  background-color: green;
   border-radius: 50%;
   text-align: center;
   font-size: 25px;
@@ -45,7 +46,7 @@
   padding: 10px;
   border-radius: 10px;
   border: none;
-  background-color: #e9edf5;
+  background-color: #f4f7fb;  
   outline: none;
   font-size: 14px;
 }
@@ -187,11 +188,12 @@
 .logout-btn {
   padding: 6px 12px;
   background-color: #ff4d4d;
-  color: white;
+  color: black;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
+
 }
 
 .logout-btn:hover {

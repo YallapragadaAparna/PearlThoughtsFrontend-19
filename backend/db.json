@@ -6,9 +6,7 @@
       "email": "yaparna2005@gmail.com",
       "password": "1234"
     },
-  
-   {
-
+    {
       "id": 2,
       "name": "Triveni",
       "email": "triveni@gmail.com",
@@ -19,22 +17,27 @@
     {
       "id": 1,
       "name": "Dr. Prakash Das",
-      "specialization": "Psychologist",
+      "specialization": "Sr. Psychologist",
       "experience": "8 Years Experience",
-      "availableTime": "09:00 AM - 07:00 PM",
-      "location": "Connolly Avenue",
       "rating": 4.8,
+      "time": "09:00 AM - 07:00 PM",
+      "service": "Mental Wellness",
+      "field": "Clinical Psychology",
+      "about": "Expert in stress management and mental health therapy.",
+      "location": "Connolly Avenue",
       "image": "https://randomuser.me/api/portraits/men/72.jpg"
-    
     },
-     {
+    {
       "id": 2,
       "name": "Dr. Priya Sharma",
-      "specialization": "Cardiologist",
+      "specialization": "Sr. Cardiologist",
       "experience": "12 Years Experience",
-      "availableTime": "10:00 AM - 2:00 PM",
-      "location": "Apollo Clinic, Chennai",
       "rating": 4.8,
+      "time": "10:00 AM - 02:00 PM",
+      "service": "Medicare",
+      "field": "Cardiology",
+      "about": "Specialist in heart diseases and preventive cardiology.",
+      "location": "Apollo Clinic, Chennai",
       "image": "https://randomuser.me/api/portraits/women/45.jpg"
     },
     {
@@ -42,9 +45,12 @@
       "name": "Dr. Arjun Mehta",
       "specialization": "Dermatologist",
       "experience": "8 Years Experience",
-      "availableTime": "9:00 AM - 1:00 PM",
-      "location": "City Care Hospital, Bangalore",
       "rating": 4.6,
+      "time": "09:00 AM - 01:00 PM",
+      "service": "Skin Care",
+      "field": "Dermatology",
+      "about": "Experienced in treating skin allergies and cosmetic issues.",
+      "location": "City Care Hospital, Bangalore",
       "image": "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
@@ -52,9 +58,12 @@
       "name": "Dr. Kavya Reddy",
       "specialization": "Pediatrician",
       "experience": "10 Years Experience",
-      "availableTime": "11:00 AM - 4:00 PM",
-      "location": "Rainbow Hospital, Hyderabad",
       "rating": 4.9,
+      "time": "11:00 AM - 04:00 PM",
+      "service": "Child Care",
+      "field": "Pediatrics",
+      "about": "Specialist in child health and newborn care.",
+      "location": "Rainbow Hospital, Hyderabad",
       "image": "https://randomuser.me/api/portraits/women/68.jpg"
     },
     {
@@ -62,9 +71,12 @@
       "name": "Dr. Rahul Verma",
       "specialization": "Orthopedic Surgeon",
       "experience": "15 Years Experience",
-      "availableTime": "3:00 PM - 7:00 PM",
-      "location": "Fortis Hospital, Delhi",
       "rating": 4.7,
+      "time": "03:00 PM - 07:00 PM",
+      "service": "Bone Care",
+      "field": "Orthopedics",
+      "about": "Expert in joint replacement and bone injuries.",
+      "location": "Fortis Hospital, Delhi",
       "image": "https://randomuser.me/api/portraits/men/75.jpg"
     },
     {
@@ -72,9 +84,12 @@
       "name": "Dr. Sneha Iyer",
       "specialization": "Gynecologist",
       "experience": "9 Years Experience",
-      "availableTime": "10:30 AM - 3:30 PM",
-      "location": "Mother Care Clinic, Mumbai",
       "rating": 4.5,
+      "time": "10:30 AM - 03:30 PM",
+      "service": "Women Care",
+      "field": "Gynecology",
+      "about": "Focused on women’s reproductive health and wellness.",
+      "location": "Mother Care Clinic, Mumbai",
       "image": "https://randomuser.me/api/portraits/women/52.jpg"
     }
   ]

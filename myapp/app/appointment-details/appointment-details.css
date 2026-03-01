@@ -1,0 +1,130 @@
+.details-container {
+  max-width: 420px;
+  margin: auto;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  background: #f5f6f8;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.back {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.doctor-card {
+  display: flex;
+  gap: 15px;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 12px;
+}
+
+.doctor-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.status-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.waiting {
+  color: #3cb4c7;
+  font-weight: 600;
+}
+
+.card {
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.card h4 {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+}
+
+.outline {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #3cb4c7;
+  background: white;
+  cursor: pointer;
+}
+
+.payment {
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 80px;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 10px;
+  background: #3cb4c7;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 420px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav span {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.bottom-nav .active {
+  color: #3cb4c7;
+  font-weight: 600;
+}
