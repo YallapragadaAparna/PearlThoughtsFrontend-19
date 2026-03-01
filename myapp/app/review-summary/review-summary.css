@@ -1,85 +1,110 @@
+/* ===============================
+   Page Wrapper
+================================= */
 .schedule-wrapper {
-  background-color: #f5f6f8;
+  background-color: #f4f7fb;
   min-height: 100vh;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Header */
+/* ===============================
+   Header Section
+================================= */
 .schedule-header {
+  width: 100%;
+  max-width: 750px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 25px;
 }
 
 .schedule-header h2 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
+  margin: 0;
 }
 
 .back-btn {
+  font-size: 22px;
   cursor: pointer;
-  font-size: 20px;
 }
 
-/* Doctor Card */
+/* ===============================
+   Doctor Card
+================================= */
 .doctor-card {
-  background: white;
+  width: 100%;
+  max-width: 750px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
   display: flex;
-  gap: 15px;
-  padding: 15px;
-  border-radius: 12px;
+  gap: 18px;
   align-items: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 .doctor-img {
-  width: 75px;
-  height: 75px;
-  border-radius: 12px;
+  width: 90px;
+  height: 90px;
+  border-radius: 16px;
   object-fit: cover;
 }
 
 .doctor-info h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .specialization {
-  font-size: 13px;
-  color: #666;
-  margin: 3px 0;
+  font-size: 14px;
+  color: #2da3b5;
+  margin: 4px 0;
 }
 
 .degree {
-  font-size: 12px;
-  color: #888;
+  font-size: 13px;
+  color: #777;
+  margin: 0;
 }
 
-/* Appointment Card */
+/* ===============================
+   Appointment Card
+================================= */
 .appointment-card {
-  background: white;
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 750px;
+  background: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 .appointment-number {
-  font-size: 14px;
-  margin-bottom: 15px;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
+/* ===============================
+   Status Section
+================================= */
 .status-section {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .label {
-  font-size: 12px;
+  font-size: 13px;
   color: #777;
+  margin-bottom: 5px;
 }
 
 .status-active {
@@ -89,50 +114,51 @@
 
 .report-time {
   font-weight: 500;
-}
-
-/* Calendar Button */
-.calendar-btn {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  background-color: #d6f3f7;
-  color: #0097a7;
-  cursor: pointer;
   font-size: 14px;
 }
 
-/* Add Patient */
+/* ===============================
+   Calendar Button
+================================= */
+.calendar-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #d6f3f7;
+  color: #0097a7;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.calendar-btn:hover {
+  background-color: #bcecf2;
+}
+
+/* ===============================
+   Add Patient Button
+================================= */
 .add-patient {
-  margin-top: 15px;
+  width: 100%;
+  max-width: 750px;
+  margin-top: 20px;
 }
 
 .add-patient button {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #3cb3c7;
-  background: transparent;
-  color: #3cb3c7;
-  cursor: pointer;
-}
-
-/* Bottom Button */
-.view-btn {
-  margin-top: 30px;
   width: 100%;
   padding: 12px;
   border-radius: 12px;
   border: none;
   background: linear-gradient(135deg, #3cb3c7, #2da3b5);
-  color: white;
+  color: #ffffff;
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
-.view-btn:hover {
+.add-patient button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 150, 170, 0.3);
+  box-shadow: 0 6px 15px rgba(0, 150, 170, 0.3);
 }

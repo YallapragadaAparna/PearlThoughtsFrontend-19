@@ -1,150 +1,13 @@
-/* Page Layout
-.appointments-container {
-  background: #f3f4f6;
-  min-height: 100vh;
-  padding: 20px 15px 80px;
-  font-family: Arial, sans-serif;
-}
-
-/* Header *
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Tabs *
-.tabs {
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
-}
-
-.tabs span {
-  padding: 10px;
-  cursor: pointer;
-  font-size: 14px;
-  color: gray;
-}
-
-.tabs .active {
-  color: #00bcd4;
-  border-bottom: 2px solid #00bcd4;
-  font-weight: 600;
-}
-
-/* Appointment Card *
-.appointment-card {
-  background: white;
-  border-radius: 14px;
-  padding: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
-}
-
-/* Top Section *
-.card-top {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.card-top img {
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.card-details h3 {
-  margin: 0;
-  font-size: 16px;
-}
-
-.time {
-  color: #00bcd4;
-  font-weight: 600;
-}
-
-.payment span {
-  color: red;
-}
-
-.card-buttons {
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.reschedule,
-.quick-query {
-  padding: 6px 10px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  background: #f9fafb;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-/* Bottom Section *
-.card-bottom {
-  margin-top: 15px;
-  padding-top: 10px;
-  border-top: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.make-payment {
-  background: #00bcd4;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* Empty *
-.empty {
-  text-align: center;
-  margin-top: 50px;
-  color: gray;
-}
-
-/* Bottom Nav *
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.08);
-  font-size: 13px;
-}
-
-.bottom-nav span {
-  cursor: pointer;
-  color: gray;
-}
-
-.bottom-nav .active {
-  color: #00bcd4;
-  font-weight: 600;
-} */
- /* ============================= */
+/* ============================= */
 /* Main Layout */
 /* ============================= */
 .appointments-container {
   min-height: 100vh;
-  background-color: #f5f7fa;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f7fa;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;   /* centers content */
 }
 
 /* ============================= */
@@ -152,34 +15,35 @@
 /* ============================= */
 .header {
   text-align: center;
-  padding: 25px 0 10px;
+  padding: 30px 0 20px;
+  width: 100%;
 }
 
 .header h2 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #222;
   margin: 0;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /* ============================= */
-/* Tabs */
+/* Tabs (Wider Now) */
 /* ============================= */
 .tabs {
   display: flex;
-  justify-content: space-between;
-  padding: 0 120px;
+  justify-content: center;
+  gap: 140px;
   border-bottom: 1px solid #e2e8f0;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  width: 95%;
+  max-width: 1500px;   /* bigger width */
 }
 
 .tabs span {
-  padding: 14px 0;
-  font-size: 14px;
+  padding: 16px 0;
+  font-size: 15px;
   color: #7a8a9e;
   cursor: pointer;
   position: relative;
-  transition: 0.3s ease;
 }
 
 .tabs span.active {
@@ -194,287 +58,212 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #1bbcd4;
-  border-radius: 6px;
+  background: #1bbcd4;
 }
 
 /* ============================= */
-/* Appointment Card */
+/* Appointment Card (BIGGER) */
 /* ============================= */
 .appointment-card {
-  background: #ffffff;
-  border-radius: 18px;
-  margin: 0 20px 40px;
-  padding: 25px 30px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 50px;
   border: 1px solid #e6ecf2;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
+  width: 95%;
+  max-width: 1500px;   /* BIG WIDTH */
+  margin-bottom: 50px;
 }
 
+/* ============================= */
 /* Left Section */
-.card-top {
+/* ============================= */
+.left-section {
   display: flex;
-  gap: 18px;
   align-items: center;
+  gap: 25px;
 }
 
-/* Doctor Image */
-.card-top img {
-  width: 65px;
-  height: 65px;
-  border-radius: 14px;
+.left-section img {
+  width: 85px;     /* bigger image */
+  height: 85px;
+  border-radius: 16px;
   object-fit: cover;
 }
 
-/* Details */
 .card-details h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
-  color: #1e293b;
 }
 
 .card-details p {
-  margin: 4px 0;
-  font-size: 14px;
+  margin: 6px 0;
+  font-size: 15px;
   color: #64748b;
 }
 
 .time {
   color: #1bbcd4;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.payment span {
-  color: #94a3b8;
-}
-
-/* Info text */
-.info-text {
-  font-size: 14px;
+/* ============================= */
+/* Center Text */
+/* ============================= */
+.center-text {
+  width: 40%;
+  font-size: 15px;
   color: #64748b;
-  margin-top: 10px;
+  text-align: center;
+  line-height: 1.6;
 }
 
 /* ============================= */
 /* Make Payment Button */
 /* ============================= */
-.make-payment {
-  display: flex;
-  align-items: center;
-}
-
 .make-payment button {
-  background-color: #1bbcd4;
+  background: #1bbcd4;
   color: white;
   border: none;
-  padding: 10px 22px;
-  font-size: 14px;
-  border-radius: 25px;
+  padding: 12px 28px;
+  font-size: 15px;
+  border-radius: 30px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .make-payment button:hover {
-  background-color: #16a4b9;
+  background: #16a4b9;
 }
 
 /* ============================= */
-/* Dropdown Dots */
+/* Dots */
 /* ============================= */
-/* .menu-wrapper {
-  margin-left: 15px;
+.menu-wrapper {
+  margin-left: 20px;
   position: relative;
-} */
- .menu-wrapper {
-  position: relative;
-  margin-left: auto;   /* pushes dots to right side */
 }
+
+.dots {
+  background: #1bbcd4;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Dropdown */
 .dropdown {
   position: absolute;
-  top: 42px;
+  top: 50px;
   right: 0;
-  width: 160px;
-  background: #ffffff;
-  border-radius: 14px;
+  width: 170px;
+  background: #fff;
+  border-radius: 16px;
   border: 1px solid #e6ecf2;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  padding: 8px 0;
-  z-index: 100;
-  animation: fadeIn 0.2s ease-in-out;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .dropdown p {
+  padding: 14px 20px;
   margin: 0;
-  padding: 12px 18px;
-  font-size: 14px;
-  color: #334155;
   cursor: pointer;
-  transition: 0.2s ease;
+  font-size: 14px;
 }
 
 .dropdown p:hover {
-  background-color: #f1f5f9;
+  background: #f1f5f9;
 }
 
-/* .dots {
-  background: blue;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-} */
-.dots {
-  background: #16a4b9;
-  border: 1px solid #e2e8f0;
-  font-size: 18px;
-  cursor: pointer;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease;
-}
-
-.dots:hover {
-  background-color: #f1f5f9;
-}
 /* ============================= */
-/* Bottom Navigation */
+/* Empty */
+/* ============================= */
+.empty {
+  text-align: center;
+  margin-top: 80px;
+  color: gray;
+}
+
+/* ============================= */
+/* Bottom Nav */
 /* ============================= */
 .bottom-nav {
   margin-top: auto;
-  height: 70px;
-  background: #ffffff;
+  height: 75px;
+  background: white;
   border-top: 1px solid #e6ecf2;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 14px;
-  color: #64748b;
+  font-size: 15px;
+  width: 100%;
 }
 
 .bottom-nav span {
   cursor: pointer;
-  transition: 0.3s;
+  color: #64748b;
 }
 
 .bottom-nav span.active {
   color: #1bbcd4;
   font-weight: 600;
 }
+
 /* ============================= */
-/* Tablet (Below 1024px) */
+/* Responsive */
 /* ============================= */
 @media (max-width: 1024px) {
-
-  .tabs {
-    padding: 0 40px;
-  }
-
   .appointment-card {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .center-text {
+    width: 100%;
   }
 
   .make-payment {
     width: 100%;
-    justify-content: flex-end;
+    text-align: right;
   }
-}
-
-
-/* ============================= */
-/* Mobile (Below 768px) */
-/* ============================= */
-@media (max-width: 768px) {
 
   .tabs {
-    padding: 0 20px;
-    font-size: 13px;
+    gap: 60px;
   }
+}/* ============================= */
+/* Full Height Payment Box */
+/* ============================= */
 
-  .appointment-card {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .card-top {
-    width: 100%;
-  }
-
-  .card-top img {
-    width: 55px;
-    height: 55px;
-  }
-
-  .card-details h3 {
-    font-size: 14px;
-  }
-
-  .card-details p {
-    font-size: 13px;
-  }
-
-  .info-text {
-    font-size: 13px;
-  }
-
-  .make-payment {
-    width: 100%;
-    justify-content: flex-end;
-  }
-
-  .make-payment button {
-    width: auto;
-    padding: 8px 18px;
-    font-size: 13px;
-  }
-
-  .dropdown {
-    width: 140px;
-    top: 38px;
-  }
-
-  .bottom-nav {
-    font-size: 12px;
-    height: 65px;
-  }
+.payment-box {
+  background: #f0fbfd;
+  height: 100%;
+  min-height: 140px;
+  padding: 20px 30px;
+  border-left: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
 }
 
+.payment-box button {
+  background: #1bbcd4;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 
-/* ============================= */
-/* Small Mobile (Below 480px) */
-/* ============================= */
-@media (max-width: 480px) {
-
-  .tabs {
-    padding: 0 10px;
-  }
-
-  .appointment-card {
-    margin: 15px;
-    padding: 16px;
-  }
-
-  .card-top {
-    gap: 12px;
-  }
-
-  .card-top img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .make-payment button {
-    width: 100%;
-    border-radius: 12px;
-  }
-
-  .dropdown {
-    right: -10px;
-  }
+.payment-box button:hover {
+  background: #16a4b9;
 }
