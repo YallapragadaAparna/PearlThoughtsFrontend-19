@@ -34,7 +34,7 @@ export default function HomePage() {
     setUser(parsedUser);
 
     // ✅ Fetch ALL doctors (NOT single doctor)
-    fetch("https://pearlthoughtsfrontend-19-6.onrender.com/doctors")
+    fetch("https://pearlthoughtsfrontend-19-11.onrender.com/doctors")
       .then((res) => res.json())
       .then((data) => setDoctors(data))
       .catch((err) => console.error("Error fetching doctors:", err));
